@@ -103,7 +103,7 @@
       "explanation": "IBM engineers developed the floppy disk not Bill Gates."
     },
     {
-      "question": "The Turing test consists of a person asking written questions of a person and a computer. If the questioner can't tell which one of the respondents is a computer then the computer has attained ________.",
+      "question": "The Turing test consists of a person asking written questions of a person and a computer. If the questioner cannot tell which respondent is a computer then the computer has attained ________.",
       "answers": ["independence", "intelligence", "Turing", "mastery"],
       "correct": 1,
       "explanation": "Passing the Turing test suggests human-like intelligence."
@@ -115,7 +115,7 @@
       "explanation": "Machine learning identifies patterns in data and improves decisions over time."
     },
     {
-      "question": "________ reality is the addition of digital information directly into our reality either to add more detail or to remove unwanted visual effects.",
+      "question": "________ reality is the addition of digital information directly into our reality either to add more detail or remove unwanted visual effects.",
       "answers": ["Altruistic", "Augmented", "Visual", "Assisted"],
       "correct": 1,
       "explanation": "Augmented reality overlays digital information onto the real world."
