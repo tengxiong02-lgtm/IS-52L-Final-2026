@@ -1,13 +1,15 @@
-{
-  chapter: "Chapter 1 Quiz",
-  id: 2,
-  question: "What does RAM temporarily store?",
-  answers: [
-    "Files permanently",
-    "Currently used programs and data",
-    "Only pictures",
-    "Only deleted files"
-  ],
-  correct: 1,
-  explanation: "RAM stores currently used programs and data while the computer is running."
-}
+const quiz = [
+  {
+    chapter: "Chapter 1 Quiz",
+    id: 1,
+    question: "Sample question goes here?",
+    answers: [
+      "Answer A",
+      "Answer B",
+      "Answer C",
+      "Answer D"
+    ],
+    correct: 0,
+    explanation: "Answer A is correct because this is where the explanation goes."
+  }
+];
