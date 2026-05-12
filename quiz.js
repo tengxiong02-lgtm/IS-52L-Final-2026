@@ -2057,7 +2057,7 @@ const quiz = [
     correct: 3,
     explanation: "A rootkit gives hidden control over a computer."
   },
-  
+ 
   {
     chapter: "Chapter 8 Quiz",
     id: 1,
@@ -2097,7 +2097,227 @@ const quiz = [
     correct: 1,
     explanation: "Turnitin.com is commonly used by schools to detect plagiarism."
   },
-  
+  {
+    chapter: "Chapter 8 Quiz",
+    id: 4,
+    question: "________ allows only limited use of media that has been legally purchased.",
+    answers: [
+      "Copyleft",
+      "Copyright",
+      "Synchronizing",
+      "Digital rights management"
+    ],
+    correct: 3,
+    explanation: "Digital rights management (DRM) restricts how purchased media can be used."
+  },
+  {
+    chapter: "Chapter 8 Quiz",
+    id: 5,
+    question: "To protect a movie, what category of intellectual property would be used?",
+    answers: [
+      "Patent",
+      "Copyright",
+      "Service mark",
+      "Trademark"
+    ],
+    correct: 1,
+    explanation: "Movies are protected under copyright law."
+  },
+  {
+    chapter: "Chapter 8 Quiz",
+    id: 6,
+    question: "________ is digital textual information that can be stored, manipulated, and transmitted by electronic devices.",
+    answers: [
+      "E-text",
+      "Digital rights management",
+      "Short message service",
+      "SMTP"
+    ],
+    correct: 0,
+    explanation: "E-text refers to digital textual information."
+  },
+  {
+    chapter: "Chapter 8 Quiz",
+    id: 7,
+    question: "A violation of the holder's rights is known as copyright ________.",
+    answers: [
+      "defrauding",
+      "abuse",
+      "violation",
+      "infringement"
+    ],
+    correct: 3,
+    explanation: "Copyright infringement is the unauthorized use of protected material."
+  },
+  {
+    chapter: "Chapter 8 Quiz",
+    id: 8,
+    question: "What is the name of the massive public online ledger which records the time and amount of every finalized cryptocurrency transaction?",
+    answers: [
+      "blockchain",
+      "cryptochain",
+      "bitcoin ledger",
+      "crypto ledger"
+    ],
+    correct: 0,
+    explanation: "Blockchain is the public ledger technology used by cryptocurrencies."
+  },
+  {
+    chapter: "Chapter 8 Quiz",
+    id: 9,
+    question: "A(n) ________ chip converts sound waves from a voice into a digital signal.",
+    answers: [
+      "digital signal processor",
+      "digital convergence",
+      "analog-to-digital converter",
+      "telephony"
+    ],
+    correct: 2,
+    explanation: "An analog-to-digital converter changes sound waves into digital data."
+  },
+  {
+    chapter: "Chapter 8 Quiz",
+    id: 10,
+    question: "Instead of writing a term paper, some people cheat and purchase one from a(n) ________.",
+    answers: [
+      "academic wholesale house",
+      "term paper resource",
+      "paper mill",
+      "academic paper resource"
+    ],
+    correct: 2,
+    explanation: "A paper mill sells prewritten or custom academic papers."
+  },
+  {
+    chapter: "Chapter 8 Quiz",
+    id: 11,
+    question: "Which of the following is not true about fake news?",
+    answers: [
+      "It is a type of hoax.",
+      "Fake news is not used for financial gain.",
+      "It is most often spread through social media.",
+      "It is intended to spread misinformation."
+    ],
+    correct: 1,
+    explanation: "Fake news is often used for financial gain through clicks and ads."
+  },
+  {
+    chapter: "Chapter 8 Quiz",
+    id: 12,
+    question: "________ property is a product of a person's mind and is usually considered an expression of human creativity.",
+    answers: [
+      "Intellectual",
+      "Personal",
+      "Abstract",
+      "Tangible"
+    ],
+    correct: 0,
+    explanation: "Intellectual property includes creations of the human mind."
+  },
+  {
+    chapter: "Chapter 8 Quiz",
+    id: 13,
+    question: "Which of the following is not a video file extension?",
+    answers: [
+      ".mov",
+      ".jpg",
+      ".mpg",
+      ".avi"
+    ],
+    correct: 1,
+    explanation: ".jpg is an image file extension, not a video format."
+  },
+  {
+    chapter: "Chapter 8 Quiz",
+    id: 14,
+    question: "Which is not a reason someone might risk violating a copyright?",
+    answers: [
+      "The risk of being caught is very low.",
+      "It is hard to prove the copyright in court.",
+      "I am just one person.",
+      "Everyone else is doing it."
+    ],
+    correct: 1,
+    explanation: "Copyright is generally enforceable in court, so this is not a common excuse."
+  },
+  {
+    chapter: "Chapter 8 Quiz",
+    id: 15,
+    question: "How long do current U.S. laws grant copyright protection?",
+    answers: [
+      "101 years",
+      "The life of the author (creator) plus 70 years",
+      "The life of the author (creator) plus 50 years",
+      "99 years"
+    ],
+    correct: 1,
+    explanation: "Current U.S. copyright law lasts for the creator's life plus 70 years."
+  },
+  {
+    chapter: "Chapter 8 Quiz",
+    id: 16,
+    question: "One app used to access the Dark Web is the ________ Browser.",
+    answers: [
+      "Sor",
+      "Lor",
+      "Tor",
+      "Zor"
+    ],
+    correct: 2,
+    explanation: "The Tor Browser is commonly used to access the Dark Web."
+  },
+  {
+    chapter: "Chapter 8 Quiz",
+    id: 17,
+    question: "What is the act of copying text or ideas from someone else and claiming them as your own?",
+    answers: [
+      "Copyright abuse",
+      "Trademark infringement",
+      "Plagiarism",
+      "Copyleft"
+    ],
+    correct: 2,
+    explanation: "Plagiarism is taking another person's work or ideas and claiming ownership."
+  },
+  {
+    chapter: "Chapter 8 Quiz",
+    id: 18,
+    question: "The Apple logo would be considered a(n) ________.",
+    answers: [
+      "patent",
+      "trademark",
+      "copyright",
+      "service mark"
+    ],
+    correct: 1,
+    explanation: "A logo is protected as a trademark."
+  },
+  {
+    chapter: "Chapter 8 Quiz",
+    id: 19,
+    question: "Which of the following describes the number of times an analog wave is measured each second during an analog-to-digital conversion?",
+    answers: [
+      "Converting rate",
+      "Conversion rate",
+      "Sampling rate",
+      "Simplifying rate"
+    ],
+    correct: 2,
+    explanation: "Sampling rate measures how many times per second an analog signal is captured."
+  },
+  {
+    chapter: "Chapter 8 Quiz",
+    id: 20,
+    question: "Which of the following digital formats compress an image file?",
+    answers: [
+      "RAW",
+      "MPEG",
+      "AAC",
+      "JPEG"
+    ],
+    correct: 3,
+    explanation: "JPEG is a compressed image file format."
+  },
   {
     chapter: "Chapter 11 Quiz",
     id: 1,
