@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IS-52 Final Quiz Reviews</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: auto;
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+    }
+
+    .meta {
+      text-align: center;
+      margin: 4px 0;
+    }
+
+    button {
+      padding: 12px 18px;
+      margin: 6px;
+      border: none;
+      border-radius: 8px;
+      background: #1f4e79;
+      color: white;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    button:hover {
+      background: #163852;
+    }
+
+    .chapter-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 10px;
+      margin-top: 25px;
+    }
+
+    .answer-btn {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      text-align: left;
+      background: #e9eef3;
+      color: black;
+    }
+
+    .answer-btn:hover {
+      background: #d6e0ea;
+    }
+
+    .correct {
+      background: #c8f7c5 !important;
+    }
+
+    .wrong {
+      background: #f7c5c5 !important;
+    }
+
+    .feedback {
+      margin-top: 18px;
+      padding: 15px;
+      border-radius: 10px;
+      background: #f1f1f1;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .review-card {
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin: 12px 0;
+      border-radius: 10px;
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>IS-52 Final Quiz Reviews</h1>
+  <p class="meta">Teng Xiong</p>
+  <p class="meta">Test Day: 5/12/2026</p>
+  <p class="meta">Tuesday 1:15pm</p>
+  <p class="meta">Room 160</p>
+
+  <div id="home">
+    <h2>Select a Chapter or Quiz</h2>
+    <div class="chapter-grid" id="chapterButtons"></div>
+  </div>
+
+  <div id="quiz" class="hidden">
+    <h2 id="quizTitle"></h2>
+    <p id="progress"></p>
+    <h3 id="questionText"></h3>
+    <div id="answerButtons"></div>
+    <div id="feedback" class="feedback hidden"></div>
+    <button id="nextBtn" class="hidden" onclick="nextQuestion()">Next</button>
+  </div>
+
+  <div id="results" class="hidden">
+    <h2>Quiz Results</h2>
+    <p id="scoreText"></p>
+    <button onclick="reviewAnswers()">Review Answers</button>
+    <button id="retakeWrongBtn" onclick="retakeWrong()">Retake Wrong Questions</button>
+    <button onclick="goHome()">Back to Chapters</button>
+  </div>
+
+  <div id="review" class="hidden">
+    <h2>Review Answers</h2>
+    <div id="reviewList"></div>
+    <button onclick="goHome()">Back to Chapters</button>
+  </div>
+</div>
+
+<script>
+const questionBank = {
+  "Chapter 1 Quiz": [
+    {
+      question: "Sample question for Chapter 1?",
+      answers: ["Answer A", "Answer B", "Answer C", "Answer D"],
+      correct: 0,
+      explanation: "Answer A is correct because this is where you explain the concept."
+    }
+  ],
+
+  "Chapter 2 Quiz": [],
+  "Chapter 5 Quiz": [],
+  "Chapter 4 Quiz": [],
+  "Chapter 3 & 13 Quiz": [],
+  "Chapter 6 Quiz": [],
+  "Chapter 7 Quiz": [],
+  "Extra Credit 1": [],
+  "Chapter 12 Quiz": [],
+  "Chapter 9 Quiz": [],
+  "Chapter 8 Quiz": [],
+  "Chapter 11 Quiz": [],
+  "Extra Credit 2": []
+};
+
+let currentChapter = "";
+let currentQuestions = [];
+let currentIndex = 0;
+let score = 0;
+let wrongQuestions = [];
+let userAnswers = [];
+
+const chapterButtons = document.getElementById("chapterButtons");
+
+Object.keys(questionBank).forEach(chapter => {
+  const btn = document.createElement("button");
+  btn.textContent = chapter;
+  btn.onclick = () => startQuiz(chapter);
+  chapterButtons.appendChild(btn);
+});
+
+function startQuiz(chapter) {
+  currentChapter = chapter;
+  currentQuestions = questionBank[chapter];
+
+  if (currentQuestions.length === 0) {
+    alert("No questions added yet for " + chapter);
+    return;
+  }
+
+  currentIndex = 0;
+  score = 0;
+  wrongQuestions = [];
+  userAnswers = [];
+
+  document.getElementById("home").classList.add("hidden");
+  document.getElementById("results").classList.add("hidden");
+  document.getElementById("review").classList.add("hidden");
+  document.getElementById("quiz").classList.remove("hidden");
+
+  document.getElementById("quizTitle").textContent = chapter;
+  showQuestion();
+}
+
+function showQuestion() {
+  const q = currentQuestions[currentIndex];
+
+  document.getElementById("progress").textContent =
+    `Question ${currentIndex + 1} of ${currentQuestions.length}`;
+
+  document.getElementById("questionText").textContent = q.question;
+
+  const answerButtons = document.getElementById("answerButtons");
+  answerButtons.innerHTML = "";
+
+  document.getElementById("feedback").classList.add("hidden");
+  document.getElementById("nextBtn").classList.add("hidden");
+
+  q.answers.forEach((answer, index) => {
+    const btn = document.createElement("button");
+    btn.textContent = answer;
+    btn.className = "answer-btn";
+    btn.onclick = () => selectAnswer(index, btn);
+    answerButtons.appendChild(btn);
+  });
+}
+
+function selectAnswer(selectedIndex, selectedBtn) {
+  const q = currentQuestions[currentIndex];
+  const buttons = document.querySelectorAll(".answer-btn");
+
+  buttons.forEach(btn => btn.disabled = true);
+
+  if (selectedIndex === q.correct) {
+    selectedBtn.classList.add("correct");
+    score++;
+  } else {
+    selectedBtn.classList.add("wrong");
+    buttons[q.correct].classList.add("correct");
+    wrongQuestions.push(q);
+  }
+
+  userAnswers.push({
+    question: q.question,
+    selected: q.answers[selectedIndex],
+    correct: q.answers[q.correct],
+    explanation: q.explanation,
+    wasCorrect: selectedIndex === q.correct
+  });
+
+  const feedback = document.getElementById("feedback");
+  feedback.innerHTML = `
+    <strong>${selectedIndex === q.correct ? "Correct" : "Wrong"}</strong><br><br>
+    ${q.explanation}
+  `;
+  feedback.classList.remove("hidden");
+
+  document.getElementById("nextBtn").classList.remove("hidden");
+}
+
+function nextQuestion() {
+  currentIndex++;
+
+  if (currentIndex < currentQuestions.length) {
+    showQuestion();
+  } else {
+    showResults();
+  }
+}
+
+function showResults() {
+  document.getElementById("quiz").classList.add("hidden");
+  document.getElementById("results").classList.remove("hidden");
+
+  document.getElementById("scoreText").textContent =
+    `You scored ${score} out of ${currentQuestions.length}.`;
+
+  document.getElementById("retakeWrongBtn").style.display =
+    wrongQuestions.length > 0 ? "inline-block" : "none";
+}
+
+function retakeWrong() {
+  currentQuestions = wrongQuestions;
+  currentIndex = 0;
+  score = 0;
+  wrongQuestions = [];
+  userAnswers = [];
+
+  document.getElementById("results").classList.add("hidden");
+  document.getElementById("quiz").classList.remove("hidden");
+  document.getElementById("quizTitle").textContent = "Retake Wrong Questions";
+
+  showQuestion();
+}
+
+function reviewAnswers() {
+  document.getElementById("results").classList.add("hidden");
+  document.getElementById("review").classList.remove("hidden");
+
+  const reviewList = document.getElementById("reviewList");
+  reviewList.innerHTML = "";
+
+  userAnswers.forEach((item, index) => {
+    const card = document.createElement("div");
+    card.className = "review-card";
+    card.innerHTML = `
+      <strong>Question ${index + 1}:</strong> ${item.question}<br><br>
+      <strong>Your Answer:</strong> ${item.selected}<br>
+      <strong>Correct Answer:</strong> ${item.correct}<br>
+      <strong>Result:</strong> ${item.wasCorrect ? "Correct" : "Wrong"}<br><br>
+      <strong>Why:</strong> ${item.explanation}
+    `;
+    reviewList.appendChild(card);
+  });
+}
+
+function goHome() {
+  document.getElementById("home").classList.remove("hidden");
+  document.getElementById("quiz").classList.add("hidden");
+  document.getElementById("results").classList.add("hidden");
+  document.getElementById("review").classList.add("hidden");
+}
+</script>
+
+</body>
+</html>
