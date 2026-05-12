@@ -324,7 +324,6 @@ const quiz = [
     correct: 3,
     explanation: "Data is raw facts. Information is data that has been organized to be useful."
   },
-  const quiz = [
   {
     chapter: "Chapter 5 Quiz",
     id: 1,
@@ -494,8 +493,7 @@ const quiz = [
     answers: ["True", "False"],
     correct: 0,
     explanation: "File Explorer is used to find, manage, and view files in Windows."
-  }
-  const quiz = [
+  },
   {
     chapter: "Chapter 4 Quiz",
     id: 1,
@@ -749,8 +747,8 @@ const quiz = [
     ],
     correct: 3,
     explanation: "A formula performs calculations using spreadsheet values."
-  }
-  const quiz = [
+  },
+  
   {
     chapter: "Chapter 3 & 13 Quiz",
     id: 1,
@@ -935,8 +933,8 @@ const quiz = [
     answers: ["ICANN", "W3C", "IAB", "ISOC"],
     correct: 0,
     explanation: "ICANN manages domain names and IP address allocation."
-  }
-  const quiz = [
+  },
+  
   {
     chapter: "Chapter 6 Quiz",
     id: 1,
@@ -1101,8 +1099,8 @@ const quiz = [
     answers: ["store", "execute", "encode", "fetch"],
     correct: 2,
     explanation: "The machine cycle includes fetch, decode, execute, and store."
-  }
-  const quiz = [
+  },
+  
   {
     chapter: "Chapter 7 Quiz",
     id: 1,
@@ -1362,8 +1360,8 @@ const quiz = [
     ],
     correct: 0,
     explanation: "A network adapter allows devices to connect and communicate on a network."
-  }
-  const quiz = [
+  },
+  
   {
     chapter: "Extra Credit 1",
     id: 1,
@@ -1622,7 +1620,7 @@ const quiz = [
     correct: 3,
     explanation: "5G is the latest widely deployed wireless generation."
   },
-  const quiz = [
+  
   {
     chapter: "Chapter 12 Quiz",
     id: 1,
@@ -1883,7 +1881,7 @@ const quiz = [
     correct: 1,
     explanation: "Ring networks use token passing to control communication."
   },
-  const quiz = [
+  
   {
     chapter: "Chapter 9 Quiz",
     id: 1,
@@ -2059,7 +2057,7 @@ const quiz = [
     correct: 3,
     explanation: "A rootkit gives hidden control over a computer."
   },
-  const quiz = [
+  
   {
     chapter: "Chapter 8 Quiz",
     id: 1,
@@ -2099,7 +2097,7 @@ const quiz = [
     correct: 1,
     explanation: "Turnitin.com is commonly used by schools to detect plagiarism."
   },
-  const quiz = [
+  
   {
     chapter: "Chapter 11 Quiz",
     id: 1,
@@ -2360,7 +2358,7 @@ const quiz = [
     correct: 3,
     explanation: "A range check limits values between a minimum and maximum amount."
   },
-  const quiz = [
+  
   {
     chapter: "Extra Credit 2",
     id: 1,
