@@ -1,12 +1,145 @@
 {
   "Chapter 1 Quiz": [
-    {
-      "question": "Howard Aiken and Grace Hopper designed the Mark series of computers used by the U.S. Navy for ballistic and gunnery calculations.",
-      "answers": ["True", "False"],
-      "correct": 0,
-      "explanation": "Howard Aiken and Grace Hopper helped design the Harvard Mark series computers used by the U.S. Navy."
-    }
-  ],
+  {
+    question: "Howard Aiken and Grace Hopper designed the Mark series of computers used by the U.S. Navy for ballistic and gunnery calculations.",
+    answers: ["True", "False"],
+    correct: 0,
+    explanation: "Howard Aiken and Grace Hopper helped design the Harvard Mark series computers used by the U.S. Navy."
+  },
+
+  {
+    question: "________ property is work that is the result of someone's creativity and knowledge.",
+    answers: ["Public", "Personal", "Collective", "Intellectual"],
+    correct: 3,
+    explanation: "Intellectual property refers to creations of the mind such as inventions, designs, and artistic works."
+  },
+
+  {
+    question: "A robot which moves and acts much like a human is a(n) ________.",
+    answers: ["empathetic agent", "embodied agent", "intelligent personal assistant", "embedded operator"],
+    correct: 1,
+    explanation: "An embodied agent is a robot designed to physically interact and behave similarly to humans."
+  },
+
+  {
+    question: "________ behavior is NOT conforming to a set of approved standards of behavior.",
+    answers: ["Dogmatic", "Legal", "Unethical", "Moral"],
+    correct: 2,
+    explanation: "Unethical behavior violates accepted moral or professional standards."
+  },
+
+  {
+    question: "________ tools enable people to connect and exchange ideas.",
+    answers: ["Social media", "Affective computing", "Digital forensics", "Debugging"],
+    correct: 0,
+    explanation: "Social media tools allow users to communicate, collaborate, and exchange ideas online."
+  },
+
+  {
+    question: "In medicine, 3D printing allows more stylish and less expensive designs for ________.",
+    answers: ["prosthetic limbs", "medicines", "patient simulators", "clothing"],
+    correct: 0,
+    explanation: "3D printing is widely used to create affordable and customizable prosthetic limbs."
+  },
+
+  {
+    question: "________ is joining together as a group to use a specific product more efficiently.",
+    answers: ["Collaborative consumption", "Crowdfunding", "Social networking", "Crowdsourcing"],
+    correct: 0,
+    explanation: "Collaborative consumption involves sharing or jointly using products and services."
+  },
+
+  {
+    question: "The Next Einstein Initiative and the ________ Institute for Mathematical Sciences bring bright young learners and the best lecturers in the world together.",
+    answers: ["Austrian", "Canadian", "African", "Computer"],
+    correct: 2,
+    explanation: "The African Institute for Mathematical Sciences supports advanced education in mathematics and science."
+  },
+
+  {
+    question: "Apple introduced the microprocessor chip in 1971.",
+    answers: ["True", "False"],
+    correct: 1,
+    explanation: "Intel introduced the first commercial microprocessor, the Intel 4004, in 1971."
+  },
+
+  {
+    question: "________ provides the instructions that tell a computer what to do.",
+    answers: ["Spam", "Hardware", "Data mining", "Software"],
+    correct: 3,
+    explanation: "Software contains the instructions and programs that direct computer operations."
+  },
+
+  {
+    question: "Which of the following is not a main area of research in artificial intelligence?",
+    answers: ["Cloud computing", "Natural language processing", "Perception", "Problem solving"],
+    correct: 0,
+    explanation: "Cloud computing is a computing service model, not a primary AI research field."
+  },
+
+  {
+    question: "________ replaces perceived reality with a different world.",
+    answers: ["Variable reality", "Entertainment reality", "Virtual reality", "Alternate reality"],
+    correct: 2,
+    explanation: "Virtual reality fully immerses users into a computer generated environment."
+  },
+
+  {
+    question: "Unwanted or junk e-mail is called ________.",
+    answers: ["spyware", "adware", "spam", "malware"],
+    correct: 2,
+    explanation: "Spam refers to unsolicited or unwanted email messages."
+  },
+
+  {
+    question: "________ tools gather information from sources such as e-mails, text messages, and tweets and make the information instantly and publicly available for use in emergencies.",
+    answers: ["Affective computing", "Crisis-mapping", "Social networking", "Crowdsourcing"],
+    correct: 1,
+    explanation: "Crisis-mapping tools collect and organize emergency related information in real time."
+  },
+
+  {
+    question: "________ results when leisure time and available tools allow us to engage in creative acts.",
+    answers: ["Cognitive surplus", "Affective computing", "Distributed computing", "Spam"],
+    correct: 0,
+    explanation: "Cognitive surplus refers to the collective free time and talents people use creatively."
+  },
+
+  {
+    question: "Analyzing computer systems to gather potential legal evidence is known as digital ________.",
+    answers: ["analysis", "forensics", "enforcement", "ethics"],
+    correct: 1,
+    explanation: "Digital forensics involves investigating digital devices for legal evidence."
+  },
+
+  {
+    question: "Bill Gates developed the floppy disk.",
+    answers: ["True", "False"],
+    correct: 1,
+    explanation: "IBM engineers developed the floppy disk, not Bill Gates."
+  },
+
+  {
+    question: "The Turing test consists of a person asking written questions of a person and a computer. If the questioner can't tell which one of the respondents is a computer, then the computer has attained ________.",
+    answers: ["independence", "intelligence", "Turing", "mastery"],
+    correct: 1,
+    explanation: "Passing the Turing test suggests that a computer demonstrates human-like intelligence."
+  },
+
+  {
+    question: "________ analyzes patterns in data, then uses the patterns to draw conclusions and adjust the actions of the AI system accordingly.",
+    answers: ["Machine learning", "Big data", "Neural learning", "Cloud Computing"],
+    correct: 0,
+    explanation: "Machine learning identifies patterns in data and improves AI decisions over time."
+  },
+
+  {
+    question: "________ reality is the addition of digital information directly into our reality, either to add more detail or to remove unwanted visual effects.",
+    answers: ["Altruistic", "Augmented", "Visual", "Assisted"],
+    correct: 1,
+    explanation: "Augmented reality overlays digital information onto the real world."
+  }
+],
   "Chapter 2 Quiz": [],
   "Chapter 5 Quiz": [],
   "Chapter 4 Quiz": [],
