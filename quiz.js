@@ -2839,4 +2839,362 @@ const quiz = [
     correct: 1,
     explanation: "Bandwidth measures how much data can be transmitted over a connection."
   },
+
+  {
+    chapter: "Extra Credit 1",
+    id: 1,
+    question: "The web is based on the ________ Protocol.",
+    answers: [
+      "Hypertext Translate",
+      "Hypertext Transfer",
+      "Hypertext Trade",
+      "Hypertext Transmit"
+    ],
+    correct: 1,
+    explanation: "HTTP stands for Hypertext Transfer Protocol.",
+    wrongExplanations: {
+      0: "Translate is not the correct web protocol term.",
+      2: "Trade is not related to how web pages are transferred.",
+      3: "Transmit sounds close, but the official term is Transfer."
+    }
+  },
+  {
+    chapter: "Extra Credit 1",
+    id: 2,
+    question: "Which of the following is not a type of e-commerce business?",
+    answers: [
+      "C2B",
+      "B2B",
+      "B2C",
+      "C2C"
+    ],
+    correct: 0,
+    explanation: "C2B is not usually listed as one of the main basic e-commerce business types in this quiz set.",
+    wrongExplanations: {
+      1: "B2B means business to business, which is a type of e-commerce.",
+      2: "B2C means business to consumer, which is a type of e-commerce.",
+      3: "C2C means consumer to consumer, which is a type of e-commerce."
+    }
+  },
+  {
+    chapter: "Extra Credit 1",
+    id: 3,
+    question: "AND, OR, and NOT are examples of ________ operators.",
+    answers: [
+      "Boolean",
+      "relational",
+      "Jacobean",
+      "keyword"
+    ],
+    correct: 0,
+    explanation: "AND, OR, and NOT are Boolean operators used to combine or limit search terms.",
+    wrongExplanations: {
+      1: "Relational operators compare values, such as greater than or equal to.",
+      2: "Jacobean is not related to search operators.",
+      3: "Keyword refers to a search word, not the operator connecting terms."
+    }
+  },
+  {
+    chapter: "Extra Credit 1",
+    id: 4,
+    question: "Which of the following are personal video journal entries posted on the web?",
+    answers: [
+      "Newsgroups",
+      "Vlogs",
+      "Podcasts",
+      "Blogs"
+    ],
+    correct: 1,
+    explanation: "Vlogs are video blogs, or personal video journal entries posted online.",
+    wrongExplanations: {
+      0: "Newsgroups are online discussion groups, not video journals.",
+      2: "Podcasts are audio or video files delivered online, usually through subscriptions or RSS.",
+      3: "Blogs are written journal entries, not specifically video entries."
+    }
+  },
+  {
+    chapter: "Extra Credit 1",
+    id: 5,
+    question: "A metasearch engine searches other search engines instead of individual websites.",
+    answers: [
+      "True",
+      "False"
+    ],
+    correct: 0,
+    explanation: "A metasearch engine gathers results from other search engines.",
+    wrongExplanations: {
+      1: "False is wrong because metasearch engines do search other search engines."
+    }
+  },
+  {
+    chapter: "Extra Credit 1",
+    id: 6,
+    question: "Which of the following information is not contained in a packet sent over the Internet?",
+    answers: [
+      "The data that are transmitted",
+      "The address from where the packet originates",
+      "The address to which the packet is sent",
+      "The size (in bytes) of the packet"
+    ],
+    correct: 3,
+    explanation: "Packets contain data plus source and destination information. The packet size is not usually listed as one of the main pieces of packet information in this quiz.",
+    wrongExplanations: {
+      0: "Packets do contain the data being transmitted.",
+      1: "Packets do contain the source address.",
+      2: "Packets do contain the destination address."
+    }
+  },
+  {
+    chapter: "Extra Credit 1",
+    id: 7,
+    question: "________ permits two or more people to communicate over the Internet in real time.",
+    answers: [
+      "Snapfish",
+      "Flickr",
+      "E-mail",
+      "Instant messaging"
+    ],
+    correct: 3,
+    explanation: "Instant messaging allows people to communicate online in real time.",
+    wrongExplanations: {
+      0: "Snapfish is a photo service, not real-time communication.",
+      1: "Flickr is a photo-sharing site, not real-time messaging.",
+      2: "E-mail is not usually real time."
+    }
+  },
+  {
+    chapter: "Extra Credit 1",
+    id: 8,
+    question: "________ describes website content in terms of the data being described rather than how it is displayed.",
+    answers: [
+      "JavaScript",
+      "HTML",
+      "CGI",
+      "XML"
+    ],
+    correct: 3,
+    explanation: "XML describes data by meaning and structure rather than presentation.",
+    wrongExplanations: {
+      0: "JavaScript is mainly used to add interactivity.",
+      1: "HTML is mainly used to structure and display web pages.",
+      2: "CGI is used for server-side processing."
+    }
+  },
+  {
+    chapter: "Extra Credit 1",
+    id: 9,
+    question: "The main path of the Internet along which data travels the fastest is known as the Internet ________.",
+    answers: [
+      "cache",
+      "backbone",
+      "protocol",
+      "highway"
+    ],
+    correct: 1,
+    explanation: "The Internet backbone is the main high-speed path where major data traffic travels.",
+    wrongExplanations: {
+      0: "Cache is temporary storage, not the main Internet path.",
+      2: "Protocol means communication rules, not the main path.",
+      3: "Highway sounds close, but the correct term is backbone."
+    }
+  },
+  {
+    chapter: "Extra Credit 1",
+    id: 10,
+    question: "________ uses a dedicated connection between two points with the connection remaining active for the duration of the transmission.",
+    answers: [
+      "A closed circuit",
+      "Circuit switching",
+      "Packet switching",
+      "An open circuit"
+    ],
+    correct: 1,
+    explanation: "Circuit switching keeps a dedicated connection open for the entire transmission.",
+    wrongExplanations: {
+      0: "A closed circuit is not the networking method described here.",
+      2: "Packet switching breaks data into packets instead of keeping one dedicated path.",
+      3: "An open circuit is not the correct networking term."
+    }
+  },
+  {
+    chapter: "Extra Credit 1",
+    id: 11,
+    question: "Some of the cache memory of a CPU is ________.",
+    answers: [
+      "on a nearby SSD",
+      "in cloud storage",
+      "on the CPU itself",
+      "on the hard disk drive"
+    ],
+    correct: 2,
+    explanation: "Some CPU cache is built directly into the CPU for fast access.",
+    wrongExplanations: {
+      0: "An SSD is storage, not CPU cache.",
+      1: "Cloud storage is remote storage, not CPU cache.",
+      3: "Hard drives are much slower storage devices."
+    }
+  },
+  {
+    chapter: "Extra Credit 1",
+    id: 12,
+    question: "Which of the following is not a permanent storage option?",
+    answers: [
+      "Internal hard drive",
+      "Random access memory",
+      "External hard drive",
+      "SSD"
+    ],
+    correct: 1,
+    explanation: "RAM is temporary volatile memory, not permanent storage.",
+    wrongExplanations: {
+      0: "An internal hard drive is permanent storage.",
+      2: "An external hard drive is permanent storage.",
+      3: "An SSD is permanent storage."
+    }
+  },
+  {
+    chapter: "Extra Credit 1",
+    id: 13,
+    question: "________ provides high-speed information processing by enabling a new set of instructions to start before the previous set is finished.",
+    answers: [
+      "Multitasking",
+      "Cache memory",
+      "Hyperthreading",
+      "Overclocking"
+    ],
+    correct: 2,
+    explanation: "Hyperthreading allows the CPU to work on multiple instruction threads more efficiently.",
+    wrongExplanations: {
+      0: "Multitasking means running multiple programs or tasks, not this CPU technique.",
+      1: "Cache memory stores frequently used data for faster access.",
+      3: "Overclocking means running the CPU faster than recommended."
+    }
+  },
+  {
+    chapter: "Extra Credit 1",
+    id: 14,
+    question: "Which of the following storage devices has the largest potential capacity?",
+    answers: [
+      "SD card",
+      "Blu-ray disc",
+      "Compact disc",
+      "Mechanical hard drive"
+    ],
+    correct: 3,
+    explanation: "Mechanical hard drives generally have the largest potential capacity among these options.",
+    wrongExplanations: {
+      0: "SD cards can store a lot, but usually not as much as hard drives.",
+      1: "Blu-ray discs have limited fixed capacity.",
+      2: "Compact discs have much smaller capacity."
+    }
+  },
+  {
+    chapter: "Extra Credit 1",
+    id: 15,
+    question: "Running the CPU at a faster speed than the manufacturer recommends is called ________.",
+    answers: [
+      "hyperthreading",
+      "overclocking",
+      "latency",
+      "fetching"
+    ],
+    correct: 1,
+    explanation: "Overclocking means increasing CPU speed beyond the manufacturer’s recommended setting.",
+    wrongExplanations: {
+      0: "Hyperthreading helps a CPU handle multiple instruction threads.",
+      2: "Latency means delay.",
+      3: "Fetching is part of the machine cycle."
+    }
+  },
+  {
+    chapter: "Extra Credit 1",
+    id: 16,
+    question: "Which of the following is not true about 5G wireless technology?",
+    answers: [
+      "It should allow online games to be played in real time.",
+      "It will use more energy than current standards.",
+      "It will transmit data up to 1Gbps.",
+      "It will allow the connection of more devices to the network than 4G."
+    ],
+    correct: 1,
+    explanation: "The quiz marks 'It will use more energy than current standards' as the statement that is not true.",
+    wrongExplanations: {
+      0: "5G is expected to support lower latency for real-time uses.",
+      2: "5G can support high-speed data transmission.",
+      3: "5G supports more connected devices than 4G."
+    }
+  },
+  {
+    chapter: "Extra Credit 1",
+    id: 17,
+    question: "If you want to access your home network from your distant garage, a ________ might help boost the signal.",
+    answers: [
+      "router",
+      "switch",
+      "wireless range extender",
+      "wireless access point"
+    ],
+    correct: 2,
+    explanation: "A wireless range extender boosts Wi-Fi coverage farther from the router.",
+    wrongExplanations: {
+      0: "A router manages network traffic, but it may not extend the signal far enough by itself.",
+      1: "A switch connects wired devices, not wireless range.",
+      3: "A wireless access point creates access, but the quiz answer is range extender."
+    }
+  },
+  {
+    chapter: "Extra Credit 1",
+    id: 18,
+    question: "Which hardware device connects your network to the Internet?",
+    answers: [
+      "Hub",
+      "Firewall",
+      "Modem",
+      "Switch"
+    ],
+    correct: 2,
+    explanation: "A modem connects your home network to your Internet service provider.",
+    wrongExplanations: {
+      0: "A hub connects devices on a network.",
+      1: "A firewall protects a network but does not provide the Internet connection.",
+      3: "A switch connects devices inside a network."
+    }
+  },
+  {
+    chapter: "Extra Credit 1",
+    id: 19,
+    question: "A computer ________ is two or more computers connected using software and hardware so that they can communicate with each other.",
+    answers: [
+      "network",
+      "node",
+      "switch",
+      "broadband"
+    ],
+    correct: 0,
+    explanation: "A network is two or more connected computers that communicate with each other.",
+    wrongExplanations: {
+      1: "A node is one device on a network.",
+      2: "A switch connects devices within a network.",
+      3: "Broadband is a high-speed Internet connection."
+    }
+  },
+  {
+    chapter: "Extra Credit 1",
+    id: 20,
+    question: "A large network designed to provide access to a specific geographic area, such as a large city, is a ________.",
+    answers: [
+      "PAN",
+      "MAN",
+      "HAN",
+      "LAN"
+    ],
+    correct: 1,
+    explanation: "A MAN is a metropolitan area network, usually covering a city or large area.",
+    wrongExplanations: {
+      0: "A PAN is a personal area network.",
+      2: "A HAN is a home area network.",
+      3: "A LAN is a local area network."
+    }
+  },
+];
 ];
