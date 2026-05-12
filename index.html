@@ -10,6 +10,7 @@
       background: #f4f6f8;
       margin: 0;
       padding: 20px;
+      color: #222;
     }
 
     .container {
@@ -28,327 +29,301 @@
     .meta {
       text-align: center;
       margin: 4px 0;
+      color: #555;
+    }
+
+    select, button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
     }
 
     button {
-      padding: 12px 18px;
-      margin: 6px;
-      border: none;
-      border-radius: 8px;
-      background: #1f4e79;
+      background: #1f5eff;
       color: white;
       cursor: pointer;
-      font-size: 15px;
+      border: none;
+      font-weight: bold;
     }
 
     button:hover {
-      background: #163852;
-    }
-
-    button:disabled {
-      cursor: not-allowed;
-      opacity: 0.85;
-    }
-
-    .chapter-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 10px;
-      margin-top: 25px;
+      background: #1747c9;
     }
 
     .answer-btn {
-      display: block;
-      width: 100%;
-      margin: 10px 0;
+      background: #f1f1f1;
+      color: #222;
       text-align: left;
-      background: #e9eef3;
-      color: black;
+      border: 1px solid #ddd;
     }
 
     .answer-btn:hover {
-      background: #d6e0ea;
+      background: #e6e6e6;
     }
 
     .correct {
-      background: #c8f7c5 !important;
+      background: #d4edda !important;
+      border-color: #28a745;
     }
 
     .wrong {
-      background: #f7c5c5 !important;
-    }
-
-    .feedback {
-      margin-top: 18px;
-      padding: 15px;
-      border-radius: 10px;
-      background: #f1f1f1;
+      background: #f8d7da !important;
+      border-color: #dc3545;
     }
 
     .hidden {
       display: none;
     }
 
-    .review-card {
-      border: 1px solid #ddd;
+    .feedback {
+      margin-top: 15px;
       padding: 15px;
-      margin: 12px 0;
-      border-radius: 10px;
-      background: #fafafa;
+      border-radius: 8px;
+      background: #f7f7f7;
+      border-left: 5px solid #1f5eff;
     }
 
-    .error-message {
-      text-align: center;
-      color: #9b1c1c;
-      background: #fde8e8;
-      padding: 12px;
-      border-radius: 10px;
+    .review-box {
+      background: #f7f7f7;
+      padding: 15px;
       margin-top: 15px;
+      border-radius: 8px;
+    }
+
+    .score {
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
 
-<div class="container">
-  <h1>IS-52 Final Quiz Reviews</h1>
-  <p class="meta">Teng Xiong</p>
-  <p class="meta">Test Day: 5/12/2026</p>
-  <p class="meta">Tuesday 1:15pm</p>
-  <p class="meta">Room 160</p>
+  <div class="container">
+    <h1>IS-52 Final Quiz Reviews</h1>
+    <p class="meta">Teng Xiong</p>
+    <p class="meta">Test Day: 5/12/2026</p>
+    <p class="meta">Tuesday 1:15pm</p>
+    <p class="meta">Room 160</p>
 
-  <div id="home">
-    <h2>Select a Chapter or Quiz</h2>
-    <div class="chapter-grid" id="chapterButtons"></div>
-    <div id="loadMessage"></div>
+    <hr>
+
+    <div id="startScreen">
+      <h2>Select Chapter / Quiz</h2>
+
+      <select id="chapterSelect">
+        <option value="">Choose a quiz</option>
+        <option value="Chapter 1 Quiz">Chapter 1 Quiz</option>
+        <option value="Chapter 2 Quiz">Chapter 2 Quiz</option>
+        <option value="Chapter 5 Quiz">Chapter 5 Quiz</option>
+        <option value="Chapter 4 Quiz">Chapter 4 Quiz</option>
+        <option value="Chapter 3 & 13 Quiz">Chapter 3 & 13 Quiz</option>
+        <option value="Chapter 6 Quiz">Chapter 6 Quiz</option>
+        <option value="Chapter 7 Quiz">Chapter 7 Quiz</option>
+        <option value="Extra Credit 1">Extra Credit 1</option>
+        <option value="Chapter 12 Quiz">Chapter 12 Quiz</option>
+        <option value="Chapter 9 Quiz">Chapter 9 Quiz</option>
+        <option value="Chapter 8 Quiz">Chapter 8 Quiz</option>
+        <option value="Chapter 11 Quiz">Chapter 11 Quiz</option>
+        <option value="Extra Credit 2">Extra Credit 2</option>
+      </select>
+
+      <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <div id="quizScreen" class="hidden">
+      <h2 id="quizTitle"></h2>
+      <p id="progress"></p>
+      <h3 id="questionText"></h3>
+      <div id="answerChoices"></div>
+      <div id="feedbackBox" class="feedback hidden"></div>
+      <button id="nextBtn" class="hidden" onclick="nextQuestion()">Next Question</button>
+    </div>
+
+    <div id="endScreen" class="hidden">
+      <h2>Quiz Complete</h2>
+      <p id="scoreText" class="score"></p>
+
+      <button onclick="reviewQuiz()">Review All Questions</button>
+      <button id="retakeWrongBtn" onclick="retakeWrongQuestions()">Retake Wrong Questions</button>
+      <button onclick="goHome()">Choose Another Quiz</button>
+    </div>
+
+    <div id="reviewScreen" class="hidden">
+      <h2>Review Answers</h2>
+      <div id="reviewContent"></div>
+      <button onclick="goHome()">Back to Quiz Selection</button>
+    </div>
   </div>
 
-  <div id="quiz" class="hidden">
-    <h2 id="quizTitle"></h2>
-    <p id="progress"></p>
-    <h3 id="questionText"></h3>
-    <div id="answerButtons"></div>
-    <div id="feedback" class="feedback hidden"></div>
-    <button id="nextBtn" class="hidden" onclick="nextQuestion()">Next</button>
-  </div>
+  <script src="quiz.js"></script>
 
-  <div id="results" class="hidden">
-    <h2>Quiz Results</h2>
-    <p id="scoreText"></p>
-    <button onclick="reviewAnswers()">Review Answers</button>
-    <button id="retakeWrongBtn" onclick="retakeWrong()">Retake Wrong Questions</button>
-    <button onclick="goHome()">Back to Chapters</button>
-  </div>
+  <script>
+    let currentQuiz = [];
+    let currentQuestionIndex = 0;
+    let score = 0;
+    let wrongQuestions = [];
+    let userAnswers = [];
 
-  <div id="review" class="hidden">
-    <h2>Review Answers</h2>
-    <div id="reviewList"></div>
-    <button onclick="showResults()">Back to Results</button>
-    <button onclick="goHome()">Back to Chapters</button>
-  </div>
-</div>
+    function startQuiz() {
+      const selectedChapter = document.getElementById("chapterSelect").value;
 
-<script>
-let questionBank = {};
-let currentChapter = "";
-let currentQuestions = [];
-let currentIndex = 0;
-let score = 0;
-let wrongQuestions = [];
-let userAnswers = [];
-let originalQuizQuestions = [];
+      if (!selectedChapter) {
+        alert("Please select a quiz first.");
+        return;
+      }
 
-const chapterButtons = document.getElementById("chapterButtons");
-const loadMessage = document.getElementById("loadMessage");
+      currentQuiz = quiz.filter(q => q.chapter === selectedChapter);
 
-loadQuizData();
+      if (currentQuiz.length === 0) {
+        alert("No questions found for this quiz yet.");
+        return;
+      }
 
-async function loadQuizData() {
-  try {
-    const response = await fetch("quiz.json", { cache: "no-store" });
+      currentQuestionIndex = 0;
+      score = 0;
+      wrongQuestions = [];
+      userAnswers = [];
 
-    if (!response.ok) {
-      throw new Error("quiz.json was not found.");
+      document.getElementById("startScreen").classList.add("hidden");
+      document.getElementById("quizScreen").classList.remove("hidden");
+      document.getElementById("endScreen").classList.add("hidden");
+      document.getElementById("reviewScreen").classList.add("hidden");
+
+      document.getElementById("quizTitle").innerText = selectedChapter;
+
+      showQuestion();
     }
 
-    questionBank = await response.json();
+    function showQuestion() {
+      const question = currentQuiz[currentQuestionIndex];
 
-    if (!questionBank || Object.keys(questionBank).length === 0) {
-      throw new Error("quiz.json is empty or formatted incorrectly.");
+      document.getElementById("progress").innerText =
+        `Question ${currentQuestionIndex + 1} of ${currentQuiz.length}`;
+
+      document.getElementById("questionText").innerText = question.question;
+
+      const answerChoices = document.getElementById("answerChoices");
+      answerChoices.innerHTML = "";
+
+      document.getElementById("feedbackBox").classList.add("hidden");
+      document.getElementById("nextBtn").classList.add("hidden");
+
+      question.answers.forEach((answer, index) => {
+        const btn = document.createElement("button");
+        btn.innerText = answer;
+        btn.className = "answer-btn";
+        btn.onclick = () => checkAnswer(index, btn);
+        answerChoices.appendChild(btn);
+      });
     }
 
-    createChapterButtons();
-  } catch (error) {
-    chapterButtons.innerHTML = "";
-    loadMessage.innerHTML = `
-      <div class="error-message">
-        Could not load quiz.json.<br><br>
-        Make sure <strong>index.html</strong> and <strong>quiz.json</strong> are in the same GitHub folder.
-      </div>
-    `;
-    console.error(error);
-  }
-}
+    function checkAnswer(selectedIndex, selectedButton) {
+      const question = currentQuiz[currentQuestionIndex];
+      const buttons = document.querySelectorAll(".answer-btn");
 
-function createChapterButtons() {
-  chapterButtons.innerHTML = "";
-  loadMessage.innerHTML = "";
+      buttons.forEach(btn => btn.disabled = true);
 
-  Object.keys(questionBank).forEach(chapter => {
-    const btn = document.createElement("button");
-    btn.textContent = chapter;
-    btn.onclick = () => startQuiz(chapter);
-    chapterButtons.appendChild(btn);
-  });
-}
+      const correctIndex = question.correct;
 
-function startQuiz(chapter) {
-  currentChapter = chapter;
-  currentQuestions = questionBank[chapter];
+      if (selectedIndex === correctIndex) {
+        selectedButton.classList.add("correct");
+        score++;
+      } else {
+        selectedButton.classList.add("wrong");
+        buttons[correctIndex].classList.add("correct");
+        wrongQuestions.push(question);
+      }
 
-  if (!Array.isArray(currentQuestions) || currentQuestions.length === 0) {
-    alert("No questions added yet for " + chapter);
-    return;
-  }
+      userAnswers.push({
+        question: question,
+        selected: selectedIndex,
+        correct: correctIndex
+      });
 
-  originalQuizQuestions = [...currentQuestions];
-  currentIndex = 0;
-  score = 0;
-  wrongQuestions = [];
-  userAnswers = [];
+      const feedbackBox = document.getElementById("feedbackBox");
+      feedbackBox.classList.remove("hidden");
 
-  document.getElementById("home").classList.add("hidden");
-  document.getElementById("results").classList.add("hidden");
-  document.getElementById("review").classList.add("hidden");
-  document.getElementById("quiz").classList.remove("hidden");
+      feedbackBox.innerHTML = `
+        <strong>${selectedIndex === correctIndex ? "Correct" : "Wrong"}</strong><br><br>
+        <strong>Correct Answer:</strong> ${question.answers[correctIndex]}<br><br>
+        <strong>Why:</strong> ${question.explanation}
+      `;
 
-  document.getElementById("quizTitle").textContent = chapter;
-  showQuestion();
-}
+      document.getElementById("nextBtn").classList.remove("hidden");
+    }
 
-function showQuestion() {
-  const q = currentQuestions[currentIndex];
+    function nextQuestion() {
+      currentQuestionIndex++;
 
-  document.getElementById("progress").textContent =
-    `Question ${currentIndex + 1} of ${currentQuestions.length}`;
+      if (currentQuestionIndex < currentQuiz.length) {
+        showQuestion();
+      } else {
+        endQuiz();
+      }
+    }
 
-  document.getElementById("questionText").textContent = q.question;
+    function endQuiz() {
+      document.getElementById("quizScreen").classList.add("hidden");
+      document.getElementById("endScreen").classList.remove("hidden");
 
-  const answerButtons = document.getElementById("answerButtons");
-  answerButtons.innerHTML = "";
+      document.getElementById("scoreText").innerText =
+        `Score: ${score} / ${currentQuiz.length}`;
 
-  document.getElementById("feedback").classList.add("hidden");
-  document.getElementById("nextBtn").classList.add("hidden");
+      if (wrongQuestions.length === 0) {
+        document.getElementById("retakeWrongBtn").style.display = "none";
+      } else {
+        document.getElementById("retakeWrongBtn").style.display = "block";
+      }
+    }
 
-  q.answers.forEach((answer, index) => {
-    const btn = document.createElement("button");
-    btn.textContent = answer;
-    btn.className = "answer-btn";
-    btn.onclick = () => selectAnswer(index, btn);
-    answerButtons.appendChild(btn);
-  });
-}
+    function retakeWrongQuestions() {
+      currentQuiz = [...wrongQuestions];
+      currentQuestionIndex = 0;
+      score = 0;
+      wrongQuestions = [];
+      userAnswers = [];
 
-function selectAnswer(selectedIndex, selectedBtn) {
-  const q = currentQuestions[currentIndex];
-  const buttons = document.querySelectorAll(".answer-btn");
+      document.getElementById("endScreen").classList.add("hidden");
+      document.getElementById("quizScreen").classList.remove("hidden");
 
-  buttons.forEach(btn => btn.disabled = true);
+      document.getElementById("quizTitle").innerText = "Retake Wrong Questions";
 
-  const isCorrect = selectedIndex === q.correct;
+      showQuestion();
+    }
 
-  if (isCorrect) {
-    selectedBtn.classList.add("correct");
-    score++;
-  } else {
-    selectedBtn.classList.add("wrong");
-    buttons[q.correct].classList.add("correct");
-    wrongQuestions.push(q);
-  }
+    function reviewQuiz() {
+      document.getElementById("endScreen").classList.add("hidden");
+      document.getElementById("reviewScreen").classList.remove("hidden");
 
-  userAnswers.push({
-    question: q.question,
-    selected: q.answers[selectedIndex],
-    correct: q.answers[q.correct],
-    explanation: q.explanation,
-    wasCorrect: isCorrect
-  });
+      const reviewContent = document.getElementById("reviewContent");
+      reviewContent.innerHTML = "";
 
-  const feedback = document.getElementById("feedback");
-  feedback.innerHTML = `
-    <strong>${isCorrect ? "Correct" : "Wrong"}</strong><br><br>
-    ${q.explanation}
-  `;
-  feedback.classList.remove("hidden");
+      userAnswers.forEach((item, index) => {
+        const box = document.createElement("div");
+        box.className = "review-box";
 
-  document.getElementById("nextBtn").classList.remove("hidden");
-}
+        box.innerHTML = `
+          <strong>Question ${index + 1}:</strong> ${item.question.question}<br><br>
+          <strong>Your Answer:</strong> ${item.question.answers[item.selected]}<br>
+          <strong>Correct Answer:</strong> ${item.question.answers[item.correct]}<br><br>
+          <strong>Why:</strong> ${item.question.explanation}
+        `;
 
-function nextQuestion() {
-  currentIndex++;
+        reviewContent.appendChild(box);
+      });
+    }
 
-  if (currentIndex < currentQuestions.length) {
-    showQuestion();
-  } else {
-    showResults();
-  }
-}
-
-function showResults() {
-  document.getElementById("quiz").classList.add("hidden");
-  document.getElementById("review").classList.add("hidden");
-  document.getElementById("results").classList.remove("hidden");
-
-  document.getElementById("scoreText").textContent =
-    `You scored ${score} out of ${currentQuestions.length}.`;
-
-  document.getElementById("retakeWrongBtn").style.display =
-    wrongQuestions.length > 0 ? "inline-block" : "none";
-}
-
-function retakeWrong() {
-  currentQuestions = [...wrongQuestions];
-  currentIndex = 0;
-  score = 0;
-  wrongQuestions = [];
-  userAnswers = [];
-
-  document.getElementById("results").classList.add("hidden");
-  document.getElementById("quiz").classList.remove("hidden");
-  document.getElementById("quizTitle").textContent = "Retake Wrong Questions";
-
-  showQuestion();
-}
-
-function reviewAnswers() {
-  document.getElementById("results").classList.add("hidden");
-  document.getElementById("review").classList.remove("hidden");
-
-  const reviewList = document.getElementById("reviewList");
-  reviewList.innerHTML = "";
-
-  userAnswers.forEach((item, index) => {
-    const card = document.createElement("div");
-    card.className = "review-card";
-    card.innerHTML = `
-      <strong>Question ${index + 1}:</strong> ${item.question}<br><br>
-      <strong>Your Answer:</strong> ${item.selected}<br>
-      <strong>Correct Answer:</strong> ${item.correct}<br>
-      <strong>Result:</strong> ${item.wasCorrect ? "Correct" : "Wrong"}<br><br>
-      <strong>Why:</strong> ${item.explanation}
-    `;
-    reviewList.appendChild(card);
-  });
-}
-
-function goHome() {
-  currentQuestions = originalQuizQuestions;
-
-  document.getElementById("home").classList.remove("hidden");
-  document.getElementById("quiz").classList.add("hidden");
-  document.getElementById("results").classList.add("hidden");
-  document.getElementById("review").classList.add("hidden");
-}
-</script>
+    function goHome() {
+      document.getElementById("startScreen").classList.remove("hidden");
+      document.getElementById("quizScreen").classList.add("hidden");
+      document.getElementById("endScreen").classList.add("hidden");
+      document.getElementById("reviewScreen").classList.add("hidden");
+    }
+  </script>
 
 </body>
 </html>
