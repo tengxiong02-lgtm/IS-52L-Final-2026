@@ -1,15 +1,15 @@
-const quiz = [
+[
   {
-    chapter: "Chapter 1 Quiz",
-    id: 1,
-    question: "Sample question goes here?",
-    answers: [
+    "chapter": "Chapter 1 Quiz",
+    "id": 1,
+    "question": "Sample question goes here?",
+    "answers": [
       "Answer A",
       "Answer B",
       "Answer C",
       "Answer D"
     ],
-    correct: 0,
-    explanation: "Answer A is correct because this is where the explanation goes."
+    "correct": 0,
+    "explanation": "Answer A is correct because this is where the explanation goes."
   }
-];
+]
