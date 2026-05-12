@@ -158,5 +158,171 @@ const quiz = [
     answers: ["Altruistic", "Augmented", "Visual", "Assisted"],
     correct: 1,
     explanation: "Augmented reality adds digital information to the real world."
-  }
+  },
+    {
+    chapter: "Chapter 2 Quiz",
+    id: 1,
+    question: "IT skills are generally not transferable if the company you are working for becomes obsolete.",
+    answers: ["True", "False"],
+    correct: 1,
+    explanation: "IT skills are transferable across companies and industries."
+  },
+  {
+    chapter: "Chapter 2 Quiz",
+    id: 2,
+    question: "________ is concerned with the design and arrangement of machines and furniture to avoid uncomfortable or unsafe experiences.",
+    answers: ["Occupational safety", "Repetitive strain prevention", "Ergonomics", "Positioning"],
+    correct: 2,
+    explanation: "Ergonomics focuses on designing workspaces and equipment to reduce discomfort and injury."
+  },
+  {
+    chapter: "Chapter 2 Quiz",
+    id: 3,
+    question: "Which IT professional generates systems documentation for end users and programmers?",
+    answers: ["Technical writer", "Network administrator", "Helpdesk analyst", "Programmer"],
+    correct: 0,
+    explanation: "Technical writers create documentation for users and programmers."
+  },
+  {
+    chapter: "Chapter 2 Quiz",
+    id: 4,
+    question: "Jobs leaving the US for workers in other countries is known as ________.",
+    answers: ["outsourcing", "offshoring", "outbounding", "offsourcing"],
+    correct: 1,
+    explanation: "Offshoring means moving jobs to workers in other countries."
+  },
+  {
+    chapter: "Chapter 2 Quiz",
+    id: 5,
+    question: "A(n) ________ is an input device that looks like a pen.",
+    answers: ["stylus", "joystick", "pointer", "e-rod"],
+    correct: 0,
+    explanation: "A stylus is a pen-like input device."
+  },
+  {
+    chapter: "Chapter 2 Quiz",
+    id: 6,
+    question: "The computer stores currently used programs and data in ________.",
+    answers: ["RAM", "USB", "ROM", "CPU"],
+    correct: 0,
+    explanation: "RAM stores currently used programs and data."
+  },
+  {
+    chapter: "Chapter 2 Quiz",
+    id: 7,
+    question: "To connect a peripheral device to a computer to exchange data, find the appropriate ________ for the device.",
+    answers: ["port", "SSD bay", "drive", "expansion bus"],
+    correct: 0,
+    explanation: "A port connects peripheral devices to a computer."
+  },
+  {
+    chapter: "Chapter 2 Quiz",
+    id: 8,
+    question: "Professional certifications for IT skills replace a college degree in the eyes of most employers in IT.",
+    answers: ["True", "False"],
+    correct: 1,
+    explanation: "Certifications help prove skills, but they usually do not fully replace a college degree."
+  },
+  {
+    chapter: "Chapter 2 Quiz",
+    id: 9,
+    question: "Which computer port transmits audio and video without the need for compression?",
+    answers: ["VGA", "USB", "HDMI", "RGA"],
+    correct: 2,
+    explanation: "HDMI transmits digital audio and video."
+  },
+  {
+    chapter: "Chapter 2 Quiz",
+    id: 10,
+    question: "The two main categories of home and office printers are ________ and laser printers.",
+    answers: ["inkjet", "cloud-based", "thermal", "large format"],
+    correct: 0,
+    explanation: "Inkjet and laser printers are the two main home and office printer categories."
+  },
+  {
+    chapter: "Chapter 2 Quiz",
+    id: 11,
+    question: "Which of the following is the smallest unit of measure?",
+    answers: ["Terabyte", "Gigabyte", "Petabyte", "Megabyte"],
+    correct: 3,
+    explanation: "Megabyte is smaller than gigabyte, terabyte, and petabyte."
+  },
+  {
+    chapter: "Chapter 2 Quiz",
+    id: 12,
+    question: "IT Jobs are among the slowest growing jobs in the near future.",
+    answers: ["True", "False"],
+    correct: 1,
+    explanation: "IT jobs are generally among the faster growing career areas."
+  },
+  {
+    chapter: "Chapter 2 Quiz",
+    id: 13,
+    question: "In binary language, each letter of the alphabet, each number, and each special symbol is made up of a unique combination of eight ________.",
+    answers: ["kilobytes", "bytes", "characters", "bits"],
+    correct: 3,
+    explanation: "Eight bits make up one byte used to represent characters."
+  },
+  {
+    chapter: "Chapter 2 Quiz",
+    id: 14,
+    question: "Computers use a ________ language consisting of 0s and 1s.",
+    answers: ["binary", "symbol", "byte", "system"],
+    correct: 0,
+    explanation: "Binary language uses 0s and 1s."
+  },
+  {
+    chapter: "Chapter 2 Quiz",
+    id: 15,
+    question: "An Apple iPad and an Amazon Fire are examples of ________ computers.",
+    answers: ["desktop", "laptop", "tablet", "netbook"],
+    correct: 2,
+    explanation: "An iPad and Amazon Fire are tablet computers."
+  },
+  {
+    chapter: "Chapter 2 Quiz",
+    id: 16,
+    question: "Flash drives plug into a(n) ________.",
+    answers: ["drive bay", "serial port", "USB port", "expansion slot"],
+    correct: 2,
+    explanation: "Flash drives commonly plug into a USB port."
+  },
+  {
+    chapter: "Chapter 2 Quiz",
+    id: 17,
+    question: "Dropbox is an example of ________.",
+    answers: ["Bluetooth technology", "SSD technology", "optical storage", "cloud storage"],
+    correct: 3,
+    explanation: "Dropbox stores files online using cloud storage."
+  },
+  {
+    chapter: "Chapter 2 Quiz",
+    id: 18,
+    question: "Apple's macOS and Microsoft Windows are examples of ________ software.",
+    answers: ["operating system", "application", "utility", "communication"],
+    correct: 0,
+    explanation: "macOS and Windows are operating systems."
+  },
+  {
+    chapter: "Chapter 2 Quiz",
+    id: 19,
+    question: "Developing relationships with your instructors may help you land a career, because many still work in the industry.",
+    answers: ["True", "False"],
+    correct: 0,
+    explanation: "Instructors can be useful career connections because many have industry experience."
+  },
+  {
+    chapter: "Chapter 2 Quiz",
+    id: 20,
+    question: "What is the difference between data and information?",
+    answers: [
+      "Data is numbers. Information is words.",
+      "They are essentially the same thing.",
+      "Data represents a process. Information is the stored data.",
+      "Data represents a fact. Information is data that has been organized."
+    ],
+    correct: 3,
+    explanation: "Data is raw facts. Information is data that has been organized to be useful."
+  },
+  
 ];
