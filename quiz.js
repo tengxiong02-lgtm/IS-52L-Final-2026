@@ -1361,266 +1361,7 @@ const quiz = [
     correct: 0,
     explanation: "A network adapter allows devices to connect and communicate on a network."
   },
-  
-  {
-    chapter: "Extra Credit 1",
-    id: 1,
-    question: "A ________ is a personal journal posted on the web and is usually maintained by one person.",
-    answers: [
-      "podcast",
-      "blog",
-      "webcast",
-      "wiki"
-    ],
-    correct: 1,
-    explanation: "A blog is a personal journal or informational website maintained by an individual."
-  },
-  {
-    chapter: "Extra Credit 1",
-    id: 2,
-    question: "A(n) ________ is usually a live broadcast of audio or video content.",
-    answers: [
-      "instant message",
-      "podcast",
-      "wiki",
-      "webcast"
-    ],
-    correct: 3,
-    explanation: "A webcast is a live broadcast delivered over the Internet."
-  },
-  {
-    chapter: "Extra Credit 1",
-    id: 3,
-    question: "When shopping on the web, it is better to pay for your purchase with a debit card rather than a credit card.",
-    answers: [
-      "True",
-      "False"
-    ],
-    correct: 1,
-    explanation: "Credit cards are generally safer for online purchases because they offer better fraud protection."
-  },
-  {
-    chapter: "Extra Credit 1",
-    id: 4,
-    question: "AND, OR, and NOT are examples of ________ operators.",
-    answers: [
-      "Boolean",
-      "Jacobean",
-      "keyword",
-      "relational"
-    ],
-    correct: 0,
-    explanation: "AND, OR, and NOT are Boolean operators used in searches."
-  },
-  {
-    chapter: "Extra Credit 1",
-    id: 5,
-    question: "In the URL: http://www.microsoft.com/surface, the portion labeled 'http' is the ________.",
-    answers: [
-      "protocol",
-      "domain name",
-      "top-level domain",
-      "path"
-    ],
-    correct: 0,
-    explanation: "HTTP is the protocol used for transferring web pages."
-  },
-  {
-    chapter: "Extra Credit 1",
-    id: 6,
-    question: "________ describes the website content in terms of the data that is being described rather than how it is to be displayed.",
-    answers: [
-      "XML",
-      "CGI",
-      "HTML",
-      "JavaScript"
-    ],
-    correct: 0,
-    explanation: "XML describes data and content structure rather than presentation."
-  },
-  {
-    chapter: "Extra Credit 1",
-    id: 7,
-    question: "________ uses a dedicated connection between two points with the connection remaining active for the duration of the transmission.",
-    answers: [
-      "Circuit switching",
-      "A closed circuit",
-      "Packet switching",
-      "An open circuit"
-    ],
-    correct: 0,
-    explanation: "Circuit switching creates a dedicated communication path during transmission."
-  },
-  {
-    chapter: "Extra Credit 1",
-    id: 8,
-    question: "Individual Internet users connect to ISPs through a(n) ________.",
-    answers: [
-      "optical carrier (OC) line",
-      "User Datagram Protocol (UDP)",
-      "T line",
-      "point of presence (POP)"
-    ],
-    correct: 3,
-    explanation: "A point of presence (POP) is the local access point to an ISP."
-  },
-  {
-    chapter: "Extra Credit 1",
-    id: 9,
-    question: "Which protocol is used when sending files as attachments by e-mail?",
-    answers: [
-      "Multipurpose Internet Mail Extensions (MIME)",
-      "Post Office Protocol (POP)",
-      "User Datagram Protocol (UDP)",
-      "JavaScript Object Notation (JSON)"
-    ],
-    correct: 0,
-    explanation: "MIME allows e-mails to include attachments such as files and images."
-  },
-  {
-    chapter: "Extra Credit 1",
-    id: 10,
-    question: "Which of the following was created for the transfer of hypertext documents across the Internet?",
-    answers: [
-      "SSL",
-      "HTTP",
-      "FTP",
-      "AJAX"
-    ],
-    correct: 1,
-    explanation: "HTTP is the protocol used to transfer hypertext documents on the web."
-  },
-  {
-    chapter: "Extra Credit 1",
-    id: 11,
-    question: "The control unit is one component of the ________.",
-    answers: [
-      "cache",
-      "front side bus",
-      "clock",
-      "CPU"
-    ],
-    correct: 3,
-    explanation: "The control unit is part of the CPU."
-  },
-  {
-    chapter: "Extra Credit 1",
-    id: 12,
-    question: "Which of the following activities is carried out by the ALU?",
-    answers: [
-      "Renders video images",
-      "Creates virtual memory",
-      "Performs arithmetic calculations",
-      "Moves read/write heads"
-    ],
-    correct: 2,
-    explanation: "The ALU performs arithmetic and logical operations."
-  },
-  {
-    chapter: "Extra Credit 1",
-    id: 13,
-    question: "The CPU consists of which two parts?",
-    answers: [
-      "Cache memory and SSD storage",
-      "The control unit and the arithmetic logic unit",
-      "The control unit and the front side bus",
-      "The arithmetic logic unit and the front side bus"
-    ],
-    correct: 1,
-    explanation: "The CPU contains the control unit and arithmetic logic unit."
-  },
-  {
-    chapter: "Extra Credit 1",
-    id: 14,
-    question: "The Windows ________ utility returns your computer to the state it was in when it came from the factory.",
-    answers: [
-      "Backup",
-      "Reset",
-      "Erase",
-      "Refresh"
-    ],
-    correct: 1,
-    explanation: "Reset restores Windows to factory settings."
-  },
-  {
-    chapter: "Extra Credit 1",
-    id: 15,
-    question: "To speed up the display of graphics, a(n) ________ is integrated into most video cards.",
-    answers: [
-      "VGA",
-      "ALU",
-      "SSD",
-      "GPU"
-    ],
-    correct: 3,
-    explanation: "A GPU handles graphics processing tasks."
-  },
-  {
-    chapter: "Extra Credit 1",
-    id: 16,
-    question: "For the nodes on a network to communicate with each other and access the network, each node needs a ________.",
-    answers: [
-      "router",
-      "hub",
-      "DSL modem",
-      "network adapter"
-    ],
-    correct: 3,
-    explanation: "A network adapter allows devices to connect to a network."
-  },
-  {
-    chapter: "Extra Credit 1",
-    id: 17,
-    question: "A computer ________ is two or more computers connected using software and hardware so that they can communicate with each other.",
-    answers: [
-      "node",
-      "broadband",
-      "switch",
-      "network"
-    ],
-    correct: 3,
-    explanation: "A network is a group of connected computers."
-  },
-  {
-    chapter: "Extra Credit 1",
-    id: 18,
-    question: "All of the following are extra precautions you can take to secure a wireless network except ________.",
-    answers: [
-      "turn on security protocols",
-      "enable SSID broadcast",
-      "create a passphrase",
-      "change your network name (SSID)"
-    ],
-    correct: 1,
-    explanation: "Enabling SSID broadcast makes the network more visible, not more secure."
-  },
-  {
-    chapter: "Extra Credit 1",
-    id: 19,
-    question: "The network architecture that spans the largest physical distance is called a ________.",
-    answers: [
-      "HAN",
-      "WAN",
-      "LAN",
-      "PAN"
-    ],
-    correct: 1,
-    explanation: "A WAN covers the largest geographic area."
-  },
-  {
-    chapter: "Extra Credit 1",
-    id: 20,
-    question: "Which generation of wireless data is being rolled out as the latest mobile data service and also as a home Internet service?",
-    answers: [
-      "3rd",
-      "6th",
-      "4th",
-      "5th"
-    ],
-    correct: 3,
-    explanation: "5G is the latest widely deployed wireless generation."
-  },
-  
+ 
   {
     chapter: "Chapter 12 Quiz",
     id: 1,
@@ -2578,268 +2319,398 @@ const quiz = [
     correct: 3,
     explanation: "A range check limits values between a minimum and maximum amount."
   },
-  
+
   {
     chapter: "Extra Credit 2",
     id: 1,
-    question: "What is a website that allows an instructor to upload a paper to check for plagiarism?",
+    question: "A(n) ________ chip converts sound waves from a voice into a digital signal.",
     answers: [
-      "checkthatpaper.com",
-      "checkit.com",
-      "plagiarism.com",
-      "turnitin.com"
+      "telephony",
+      "digital signal processor",
+      "analog-to-digital converter",
+      "digital convergence"
     ],
-    correct: 3,
-    explanation: "Turnitin.com is commonly used by instructors to check papers for plagiarism."
+    correct: 2,
+    explanation: "An analog-to-digital converter changes sound waves into digital signals. Telephony means phone communication. A digital signal processor processes digital signals. Digital convergence means combining technologies."
   },
   {
     chapter: "Extra Credit 2",
     id: 2,
-    question: "________ is digital textual information that can be stored, manipulated, and transmitted by electronic devices.",
+    question: "What is a popular copyleft license used for software?",
     answers: [
-      "SMTP",
-      "Short message service",
-      "E-text",
-      "Digital rights management"
+      "General Public License (GNU)",
+      "Creative Commons (CC)",
+      "Software Copy License (SCL)",
+      "NonCommercial (NC)"
     ],
-    correct: 2,
-    explanation: "E-text refers to digital textual information used electronically."
+    correct: 0,
+    explanation: "The GNU General Public License is a common copyleft software license. Creative Commons is usually for creative works. SCL is not the standard answer. NonCommercial is a license restriction."
   },
   {
     chapter: "Extra Credit 2",
     id: 3,
-    question: "Which is not a reason someone might risk violating a copyright?",
+    question: "What happens to e-books rented through VitalSource when your subscription ends?",
     answers: [
-      "Everyone else is doing it.",
-      "It is hard to prove the copyright in court.",
-      "I am just one person.",
-      "The risk of being caught is very low."
+      "Only the first chapter can be read.",
+      "They disappear from your device.",
+      "They show up in your library, but cannot be read.",
+      "They are encrypted until you purchase them."
     ],
-    correct: 1,
-    explanation: "Difficulty proving copyright in court is not a common excuse people use."
+    correct: 2,
+    explanation: "Rented e-books may still appear in the library, but access is removed. The other choices incorrectly describe partial reading, deletion, or encryption."
   },
   {
     chapter: "Extra Credit 2",
     id: 4,
-    question: "Which of the following is not true about fake news?",
+    question: "Works without copyright protection are in the ________.",
     answers: [
-      "It is most often spread through social media.",
-      "It is a type of hoax.",
-      "Fake news is not used for financial gain.",
-      "It is intended to spread misinformation."
+      "trademark zone",
+      "free use domain",
+      "copyleft domain",
+      "public domain"
     ],
-    correct: 2,
-    explanation: "Fake news is often used for financial gain through clicks and advertising."
+    correct: 3,
+    explanation: "Public domain means the work has no copyright protection. The other choices are not the correct legal category."
   },
   {
     chapter: "Extra Credit 2",
     id: 5,
-    question: "One app used to access the Dark Web is the ________ Browser.",
+    question: "Which of the following is not true about fake news?",
     answers: [
-      "Sor",
-      "Zor",
-      "Tor",
-      "Lor"
+      "It is most often spread through social media.",
+      "It is intended to spread misinformation.",
+      "It is a type of hoax.",
+      "Fake news is not used for financial gain."
     ],
-    correct: 2,
-    explanation: "The Tor Browser is commonly used to access the Dark Web."
+    correct: 3,
+    explanation: "Fake news can be used for financial gain through clicks and ads. The other choices are true about fake news."
   },
   {
     chapter: "Extra Credit 2",
     id: 6,
-    question: "A(n) ________ takes advantage of file transport methods, such as e-mail, to spread on its own.",
+    question: "A ________ allows a hacker to gain access to your computer and take almost complete control of it without your knowledge.",
     answers: [
-      "macro virus",
-      "encryption virus",
-      "script virus",
-      "worm"
+      "rootkit",
+      "zombie",
+      "denial of service (DoS)",
+      "logic bomb"
     ],
-    correct: 3,
-    explanation: "A worm spreads itself automatically through networks and email systems."
+    correct: 0,
+    explanation: "A rootkit hides in a system and gives control to a hacker. A zombie is an infected computer. DoS is an attack. A logic bomb activates under certain conditions."
   },
   {
     chapter: "Extra Credit 2",
     id: 7,
-    question: "________ floods a computer with requests until it shuts down and refuses to answer any requests for information.",
+    question: "A packet analyzer is a program that can enable a hacker to do all of the following except ________.",
     answers: [
-      "Pretexting",
-      "A DDoS attack",
-      "A polymorphic virus",
-      "A Trojan horse"
+      "use your debit card information to purchase items illegally",
+      "steal your logons and passwords for various accounts",
+      "launch a denial of service (DoS) attack on your computer",
+      "gather information to assume your identity"
     ],
-    correct: 1,
-    explanation: "A DDoS attack overwhelms a system with excessive traffic requests."
+    correct: 2,
+    explanation: "A packet analyzer captures network traffic. It can expose sensitive information, but it does not directly launch a DoS attack."
   },
   {
     chapter: "Extra Credit 2",
     id: 8,
-    question: "Computer ________ involves identifying, extracting, preserving, and documenting computer evidence.",
+    question: "A ________ is a virus that is attached to documents.",
     answers: [
-      "forensics",
-      "multi-factor authentication",
-      "hacking",
-      "inoculation"
+      "Trojan horse",
+      "polymorphic virus",
+      "script virus",
+      "macro virus"
     ],
-    correct: 0,
-    explanation: "Computer forensics focuses on investigating and preserving digital evidence."
+    correct: 3,
+    explanation: "A macro virus attaches to documents. A Trojan horse disguises itself. A polymorphic virus changes form. A script virus uses scripts."
   },
   {
     chapter: "Extra Credit 2",
     id: 9,
-    question: "Using your computer for non-work activities while you are being paid to work is known as ________.",
+    question: "Social ________ is any technique that uses social skills to generate human interaction that entices individuals to reveal sensitive information.",
     answers: [
-      "cyberloafing",
-      "cyberbreaking",
-      "cyberlazing",
-      "cybersleeping"
+      "engineering",
+      "pharming",
+      "theft",
+      "pretexting"
     ],
     correct: 0,
-    explanation: "Cyberloafing means using workplace technology for personal activities during work time."
+    explanation: "Social engineering tricks people into revealing information. Pharming redirects users. Theft is too broad. Pretexting is one type of social engineering."
   },
   {
     chapter: "Extra Credit 2",
     id: 10,
-    question: "Which is not one of the four key pieces of personal information you should protect from identity thieves?",
+    question: "Which type of backup ensures you capture a complete snapshot of everything that makes your computer run?",
     answers: [
-      "Street address",
-      "Anniversary",
-      "Social Security number",
-      "Date of birth"
+      "Image",
+      "Complete",
+      "Full",
+      "Incremental"
     ],
-    correct: 1,
-    explanation: "Anniversary dates are generally not considered critical identity theft information."
+    correct: 0,
+    explanation: "An image backup captures the whole system. Full backup copies files. Incremental backup copies changes. Complete is not the standard term here."
   },
   {
     chapter: "Extra Credit 2",
     id: 11,
-    question: "A(n) ________ check determines whether a required field such as LastName was filled in.",
+    question: "A ________ relationship indicates that for each record in a table, there is only a single corresponding record in a related table.",
     answers: [
-      "range",
-      "completeness",
-      "consistency",
-      "alphabetic"
+      "many-to-one",
+      "one-to-one",
+      "many-to-many",
+      "one-to-many"
     ],
     correct: 1,
-    explanation: "A completeness check ensures required fields are not left blank."
+    explanation: "One-to-one means one record matches one related record. The other relationships involve multiple records."
   },
   {
     chapter: "Extra Credit 2",
     id: 12,
     question: "You can set a ________, which is automatically displayed in a field unless the user enters something different.",
     answers: [
-      "field type",
       "default value",
       "relation",
+      "field type",
       "numeric check"
     ],
-    correct: 1,
-    explanation: "A default value automatically appears unless changed by the user."
+    correct: 0,
+    explanation: "A default value appears automatically. Relation, field type, and numeric check do not automatically fill a field."
   },
   {
     chapter: "Extra Credit 2",
     id: 13,
-    question: "You would use a ________ in an Access database to temporarily display records of residents for the city of Boston.",
+    question: "________ is the branch of computer science that attempts to create computers that think like humans.",
     answers: [
-      "sieve",
-      "filter",
-      "field constraint",
-      "validation rule"
+      "Natural language processing",
+      "Enterprise resource planning",
+      "Artificial intelligence",
+      "Data warehousing"
     ],
-    correct: 1,
-    explanation: "A filter temporarily displays records matching selected criteria."
+    correct: 2,
+    explanation: "Artificial intelligence tries to make computers think like humans. NLP is only language processing. ERP manages business systems. Data warehousing stores data."
   },
   {
     chapter: "Extra Credit 2",
     id: 14,
-    question: "Data staging consists of all of the following steps, except ________.",
+    question: "A ________ check would be used in a field to restrict the fines for speeding violations so that they fall between $50 and $250.",
     answers: [
-      "mining the data",
-      "storing the data in a warehouse",
-      "extracting the data",
-      "transforming the data"
+      "completeness",
+      "consistency",
+      "range",
+      "numeric"
     ],
-    correct: 0,
-    explanation: "Data mining happens after staging, not during the staging process."
+    correct: 2,
+    explanation: "A range check limits values between minimum and maximum amounts. Completeness checks required fields. Consistency checks agreement. Numeric checks only confirm numbers."
   },
   {
     chapter: "Extra Credit 2",
     id: 15,
-    question: "________ is used to ensure that data is organized most efficiently in a database.",
+    question: "Big data analytics is usually associated with ________ services.",
     answers: [
-      "Consistency checking",
-      "Normalization",
-      "Validation",
-      "Range checking"
+      "decision support",
+      "office support",
+      "data warehouse",
+      "management information"
     ],
-    correct: 1,
-    explanation: "Normalization organizes database data efficiently and reduces redundancy."
+    correct: 0,
+    explanation: "Big data analytics supports decision-making. Office support is basic productivity. Data warehouse stores data. MIS provides routine business reports."
   },
   {
     chapter: "Extra Credit 2",
     id: 16,
-    question: "In a ________ network, each node connected to the network communicates directly with every other node.",
+    question: "The computers in a lab on a floor of a building would be connected using a ________.",
     answers: [
-      "client/server",
-      "peer-to-peer",
-      "router",
-      "bridge"
+      "MAN",
+      "WAN",
+      "PAN",
+      "LAN"
     ],
-    correct: 1,
-    explanation: "Peer-to-peer networks allow devices to communicate directly with each other."
+    correct: 3,
+    explanation: "A LAN connects computers in a local area. MAN covers a city. WAN covers large distances. PAN is for personal devices."
   },
   {
     chapter: "Extra Credit 2",
     id: 17,
     question: "A ________ uses the Internet communications infrastructure to build a secure and private network.",
     answers: [
-      "VPN",
-      "PAN",
       "WAN",
-      "HAN"
+      "HAN",
+      "PAN",
+      "VPN"
     ],
-    correct: 0,
-    explanation: "A VPN creates a secure private connection over the Internet."
+    correct: 3,
+    explanation: "A VPN creates a secure private connection over the Internet. WAN, HAN, and PAN are network types, not secure tunnels."
   },
   {
     chapter: "Extra Credit 2",
     id: 18,
-    question: "A ________ network can contain servers as well as individual computers.",
+    question: "Which of the following would not be considered a possessed object?",
     answers: [
-      "client/server",
-      "peer-to-peer",
-      "switch",
-      "bridge"
+      "password",
+      "driver's license",
+      "smart keys",
+      "key cards"
     ],
     correct: 0,
-    explanation: "Client/server networks use centralized servers alongside connected computers."
+    explanation: "A password is something you know, not something you possess. The other choices are physical objects."
   },
   {
     chapter: "Extra Credit 2",
     id: 19,
-    question: "A(n) ________ server is a server that stores and manages files for network users.",
+    question: "Ring networks use the ________ method to avoid data collisions.",
     answers: [
-      "authentication",
-      "e-mail",
-      "file",
-      "print"
+      "active-check",
+      "token",
+      "packet screening",
+      "passive-check"
     ],
-    correct: 2,
-    explanation: "A file server stores and manages files for users on a network."
+    correct: 1,
+    explanation: "Ring networks use token passing. The other choices are not the standard collision-avoidance method."
   },
   {
     chapter: "Extra Credit 2",
     id: 20,
-    question: "________ is the amount of data that can be transmitted across a transmission medium measured in bits per second.",
+    question: "________ cable is not subject to electromagnetic interference or radio frequency interference.",
     answers: [
-      "Data capacity",
-      "Bandwidth",
-      "Infusion",
-      "Scalability"
+      "Fiber-optic",
+      "Twisted-pair",
+      "Polycarbonate",
+      "Coaxial"
+    ],
+    correct: 0,
+    explanation: "Fiber-optic cable uses light, so it avoids EMI and RFI. Twisted-pair and coaxial use electrical signals. Polycarbonate is not the network cable type."
+  },
+  {
+    chapter: "Extra Credit 2",
+    id: 21,
+    question: "What is the act of copying text or ideas from someone else and claiming them as your own?",
+    answers: [
+      "Copyright abuse",
+      "Trademark infringement",
+      "Plagiarism",
+      "Copyleft"
+    ],
+    correct: 2,
+    explanation: "Plagiarism is using someone else's words or ideas as your own. Copyright abuse and trademark infringement are legal issues. Copyleft is a licensing approach."
+  },
+  {
+    chapter: "Extra Credit 2",
+    id: 22,
+    question: "A violation of the holder's rights is known as copyright ________.",
+    answers: [
+      "violation",
+      "abuse",
+      "defrauding",
+      "infringement"
+    ],
+    correct: 3,
+    explanation: "Copyright infringement is the legal term. The other answers are not the precise term."
+  },
+  {
+    chapter: "Extra Credit 2",
+    id: 23,
+    question: "When does copyright protection begin?",
+    answers: [
+      "When the application for the copyright has been submitted",
+      "When a work is begun",
+      "When the application for the copyright has been approved",
+      "When a work is created and fixed into a digital or physical form"
+    ],
+    correct: 3,
+    explanation: "Copyright begins when a work is fixed in a tangible or digital form. It does not require an application or approval first."
+  },
+  {
+    chapter: "Extra Credit 2",
+    id: 24,
+    question: "One app used to access the Dark Web is the ________ Browser.",
+    answers: [
+      "Lor",
+      "Sor",
+      "Zor",
+      "Tor"
+    ],
+    correct: 3,
+    explanation: "Tor Browser is used to access parts of the Dark Web. Lor, Sor, and Zor are not correct browsers."
+  },
+  {
+    chapter: "Extra Credit 2",
+    id: 25,
+    question: "Which of the following digital formats compress an image file?",
+    answers: [
+      "RAW",
+      "AAC",
+      "JPEG",
+      "MPEG"
+    ],
+    correct: 2,
+    explanation: "JPEG compresses image files. RAW is usually uncompressed image data. AAC is audio. MPEG is video."
+  },
+  {
+    chapter: "Extra Credit 2",
+    id: 26,
+    question: "Management information systems (MIS) provide ________ reports, which show conditions that are unusual or need attention from users of the system.",
+    answers: [
+      "expert",
+      "detail",
+      "summary",
+      "exception"
+    ],
+    correct: 3,
+    explanation: "Exception reports show unusual conditions. Detail and summary reports are general reports. Expert is not the correct MIS report type."
+  },
+  {
+    chapter: "Extra Credit 2",
+    id: 27,
+    question: "SQL uses ________ to extract records from a database by using English-like expressions that have variables and operations.",
+    answers: [
+      "Boolean algebra",
+      "relational algebra",
+      "primary keys",
+      "foreign keys"
     ],
     correct: 1,
-    explanation: "Bandwidth measures how much data can be transmitted over a connection."
+    explanation: "SQL is based on relational algebra. Boolean algebra handles logic. Primary and foreign keys connect records."
   },
-
+  {
+    chapter: "Extra Credit 2",
+    id: 28,
+    question: "________ is used to ensure that data is organized most efficiently in a database.",
+    answers: [
+      "Normalization",
+      "Consistency checking",
+      "Range checking",
+      "Validation"
+    ],
+    correct: 0,
+    explanation: "Normalization organizes data efficiently and reduces redundancy. The others are validation or checking methods."
+  },
+  {
+    chapter: "Extra Credit 2",
+    id: 29,
+    question: "Data staging consists of all of the following steps, except ________.",
+    answers: [
+      "transforming the data",
+      "storing the data in a warehouse",
+      "extracting the data",
+      "mining the data"
+    ],
+    correct: 3,
+    explanation: "Data staging includes extracting, transforming, and storing data. Mining happens later during analysis."
+  },
+  {
+    chapter: "Extra Credit 2",
+    id: 30,
+    question: "You would use a ________ in an Access database to temporarily display records of residents for the city of Boston.",
+    answers: [
+      "filter",
+      "sieve",
+      "field constraint",
+      "validation rule"
+    ],
+    correct: 0,
+    explanation: "A filter temporarily displays matching records. A sieve is not an Access tool. Constraints and validation rules control data entry."
+  },
+  
   {
     chapter: "Extra Credit 1",
     id: 1,
