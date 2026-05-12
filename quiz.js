@@ -2727,8 +2727,7 @@ const quiz = [
       0: "Translate is not the correct web protocol term.",
       2: "Trade is not related to how web pages are transferred.",
       3: "Transmit sounds close, but the official term is Transfer."
-    }
-  },
+    },
   {
     chapter: "Extra Credit 1",
     id: 2,
@@ -2745,8 +2744,7 @@ const quiz = [
       1: "B2B means business to business, which is a type of e-commerce.",
       2: "B2C means business to consumer, which is a type of e-commerce.",
       3: "C2C means consumer to consumer, which is a type of e-commerce."
-    }
-  },
+    },
   {
     chapter: "Extra Credit 1",
     id: 3,
@@ -2763,8 +2761,7 @@ const quiz = [
       1: "Relational operators compare values, such as greater than or equal to.",
       2: "Jacobean is not related to search operators.",
       3: "Keyword refers to a search word, not the operator connecting terms."
-    }
-  },
+    },
   {
     chapter: "Extra Credit 1",
     id: 4,
@@ -2781,8 +2778,7 @@ const quiz = [
       0: "Newsgroups are online discussion groups, not video journals.",
       2: "Podcasts are audio or video files delivered online, usually through subscriptions or RSS.",
       3: "Blogs are written journal entries, not specifically video entries."
-    }
-  },
+    },
   {
     chapter: "Extra Credit 1",
     id: 5,
@@ -2795,8 +2791,7 @@ const quiz = [
     explanation: "A metasearch engine gathers results from other search engines.",
     wrongExplanations: {
       1: "False is wrong because metasearch engines do search other search engines."
-    }
-  },
+    },
   {
     chapter: "Extra Credit 1",
     id: 6,
@@ -2813,8 +2808,7 @@ const quiz = [
       0: "Packets do contain the data being transmitted.",
       1: "Packets do contain the source address.",
       2: "Packets do contain the destination address."
-    }
-  },
+    },
   {
     chapter: "Extra Credit 1",
     id: 7,
@@ -2831,8 +2825,7 @@ const quiz = [
       0: "Snapfish is a photo service, not real-time communication.",
       1: "Flickr is a photo-sharing site, not real-time messaging.",
       2: "E-mail is not usually real time."
-    }
-  },
+    },
   {
     chapter: "Extra Credit 1",
     id: 8,
@@ -2849,8 +2842,7 @@ const quiz = [
       0: "JavaScript is mainly used to add interactivity.",
       1: "HTML is mainly used to structure and display web pages.",
       2: "CGI is used for server-side processing."
-    }
-  },
+    },
   {
     chapter: "Extra Credit 1",
     id: 9,
@@ -2867,8 +2859,7 @@ const quiz = [
       0: "Cache is temporary storage, not the main Internet path.",
       2: "Protocol means communication rules, not the main path.",
       3: "Highway sounds close, but the correct term is backbone."
-    }
-  },
+    },
   {
     chapter: "Extra Credit 1",
     id: 10,
@@ -2885,8 +2876,7 @@ const quiz = [
       0: "A closed circuit is not the networking method described here.",
       2: "Packet switching breaks data into packets instead of keeping one dedicated path.",
       3: "An open circuit is not the correct networking term."
-    }
-  },
+    },
   {
     chapter: "Extra Credit 1",
     id: 11,
@@ -2903,8 +2893,7 @@ const quiz = [
       0: "An SSD is storage, not CPU cache.",
       1: "Cloud storage is remote storage, not CPU cache.",
       3: "Hard drives are much slower storage devices."
-    }
-  },
+    },
   {
     chapter: "Extra Credit 1",
     id: 12,
@@ -2921,8 +2910,7 @@ const quiz = [
       0: "An internal hard drive is permanent storage.",
       2: "An external hard drive is permanent storage.",
       3: "An SSD is permanent storage."
-    }
-  },
+    },
   {
     chapter: "Extra Credit 1",
     id: 13,
@@ -2939,8 +2927,7 @@ const quiz = [
       0: "Multitasking means running multiple programs or tasks, not this CPU technique.",
       1: "Cache memory stores frequently used data for faster access.",
       3: "Overclocking means running the CPU faster than recommended."
-    }
-  },
+    },
   {
     chapter: "Extra Credit 1",
     id: 14,
@@ -2957,8 +2944,7 @@ const quiz = [
       0: "SD cards can store a lot, but usually not as much as hard drives.",
       1: "Blu-ray discs have limited fixed capacity.",
       2: "Compact discs have much smaller capacity."
-    }
-  },
+    },
   {
     chapter: "Extra Credit 1",
     id: 15,
@@ -2975,8 +2961,7 @@ const quiz = [
       0: "Hyperthreading helps a CPU handle multiple instruction threads.",
       2: "Latency means delay.",
       3: "Fetching is part of the machine cycle."
-    }
-  },
+    },
   {
     chapter: "Extra Credit 1",
     id: 16,
@@ -2993,8 +2978,7 @@ const quiz = [
       0: "5G is expected to support lower latency for real-time uses.",
       2: "5G can support high-speed data transmission.",
       3: "5G supports more connected devices than 4G."
-    }
-  },
+    },
   {
     chapter: "Extra Credit 1",
     id: 17,
@@ -3011,8 +2995,7 @@ const quiz = [
       0: "A router manages network traffic, but it may not extend the signal far enough by itself.",
       1: "A switch connects wired devices, not wireless range.",
       3: "A wireless access point creates access, but the quiz answer is range extender."
-    }
-  },
+    },
   {
     chapter: "Extra Credit 1",
     id: 18,
@@ -3029,8 +3012,7 @@ const quiz = [
       0: "A hub connects devices on a network.",
       1: "A firewall protects a network but does not provide the Internet connection.",
       3: "A switch connects devices inside a network."
-    }
-  },
+    },
   {
     chapter: "Extra Credit 1",
     id: 19,
@@ -3047,8 +3029,7 @@ const quiz = [
       1: "A node is one device on a network.",
       2: "A switch connects devices within a network.",
       3: "Broadband is a high-speed Internet connection."
-    }
-  },
+    },
   {
     chapter: "Extra Credit 1",
     id: 20,
@@ -3065,6 +3046,5 @@ const quiz = [
       0: "A PAN is a personal area network.",
       2: "A HAN is a home area network.",
       3: "A LAN is a local area network."
-    }
   },
 ];
